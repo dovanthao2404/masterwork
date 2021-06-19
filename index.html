@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masterwork</title>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- FONT GOOGLE -->
+    <link
+      href="//fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="fixed-top">
+      <nav
+        class="navbar navbar-expand-lg justify-content-beetwen"
+        id="navbarMenu"
+      >
+        <div class="container-xl">
+          <a href="#" class="navbar-brand">
+            <i class="fa fa-handshake mr-1"></i>Masterwork
+          </a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#menuNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="
+              collapse
+              navbar-collapse
+              justify-content-end
+              align-item-center
+            "
+            id="menuNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Pages</a
+                >
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Blog post</a>
+                  <a href="#" class="dropdown-item">Blog single</a>
+                  <a href="#" class="dropdown-item">Landing page</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item ml-3">
+                <button href="#" class="btn btn-outline-primary nav-link">
+                  SCHEDULE A DEMO
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="master__banner">
+      <div class="container d-flex">
+        <div class="banner__left row align-items-center">
+          <h1>We Execute Our Ideas From Start to Finish</h1>
+          <p>We Execute Our Ideas From Start to Finish</p>
+          <input type="button" class="btn btn-outline-primary" value="GET STARTED"/>
+        </div>
+        <div class="banner__img">
+          <img src="./img/main.png" class="img-fluid" alt="main image">
+        </div> 
+
+        
+      </div>
+    </section>
+    <section class="master__tool"></section>
+    <section class="master__about"></section>
+    <section class="master__commit"></section>
+    <section class="master__solutions"></section>
+    <section class="master__faq"></section>
+    <section class="master__projects"></section>
+    <section class="master__testimonials"></section>
+    <section class="master__ready"></section>
+    <footer></footer>
+
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <!-- SCROLL HEADER -->
+    <script>
+      $(window).scroll(function () {
+        var sc = $(window).scrollTop();
+        if (sc > 1) {
+          $("#navbarMenu").addClass("small");
+        } else {
+          $("#navbarMenu").removeClass("small");
+        }
+      });
+    </script>
+  </body>
+</html>
